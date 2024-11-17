@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>List multi-select micro-animation</title>
+  </head>
+  <body>
+    <div class="user-select-container">
+      <header class="user-select-header">
+        <h2>Select Team Members</h2>
+        <span class="selected-count" aria-live="polite">0 users selected</span>
+      </header>
+
+      <ul class="user-list" role="list" aria-label="User selection">
+        <li class="bg-highlight"></li>
+        <li class="user-item">
+          <input
+            type="checkbox"
+            class="user-checkbox"
+            name="selected_users[]"
+            value="1"
+            id="user-1"
+          />
+          <label class="user-select-label" for="user-1">
+            <div class="user-avatar">
+              <img
+                src="./images/img-1.jpg"
+                alt="Profile picture of Amara Okafor"
+                class="avatar-image"
+              />
+            </div>
+            <div class="user-info">
+              <span class="user-name">Amara Okafor</span>
+              <span class="user-role">Product Designer</span>
+            </div>
+            <div class="selection-indicator">
+              <i class="fa-solid fa-check" aria-hidden="true"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="user-item">
+          <input
+            type="checkbox"
+            class="user-checkbox"
+            name="selected_users[]"
+            value="2"
+            id="user-2"
+          />
+          <label class="user-select-label" for="user-2">
+            <div class="user-avatar">
+              <img
+                src="./images/img-2.jpg"
+                alt="
+              >Profile picture of Kwame Mensah"
+                class="avatar-image"
+              />
+            </div>
+            <div class="user-info">
+              <span class="user-name">Kwame Mensah</span>
+              <span class="user-role">Developer</span>
+            </div>
+            <div class="selection-indicator">
+              <i class="fa-solid fa-check" aria-hidden="true"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="user-item">
+          <input
+            type="checkbox"
+            class="user-checkbox"
+            name="selected_users[]"
+            value="3"
+            id="user-3"
+          />
+          <label class="user-select-label" for="user-3">
+            <div class="user-avatar">
+              <img
+                src="./images/img-3.jpg"
+                alt="
+              >Profile picture of Zainab Diallo"
+                class="avatar-image"
+              />
+            </div>
+            <div class="user-info">
+              <span class="user-name">Zainab Diallo</span>
+              <span class="user-role">Project Manager</span>
+            </div>
+            <div class="selection-indicator">
+              <i class="fa-solid fa-check" aria-hidden="true"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="user-item">
+          <input
+            type="checkbox"
+            class="user-checkbox"
+            name="selected_users[]"
+            value="4"
+            id="user-4"
+          />
+          <label class="user-select-label" for="user-4">
+            <div class="user-avatar">
+              <img
+                src="./images/img-4.jpg"
+                alt="
+              >Profile picture of Chioma Adebayo"
+                class="avatar-image"
+              />
+            </div>
+            <div class="user-info">
+              <span class="user-name">Chioma Adebayo</span>
+              <span class="user-role">UX Researcher</span>
+            </div>
+            <div class="selection-indicator">
+              <i class="fa-solid fa-check" aria-hidden="true"></i>
+            </div>
+          </label>
+        </li>
+
+        <li class="user-item">
+          <input
+            type="checkbox"
+            class="user-checkbox"
+            name="selected_users[]"
+            value="5"
+            id="user-5"
+          />
+          <label class="user-select-label" for="user-5">
+            <div class="user-avatar">
+              <img
+                src="./images/img-5.jpg"
+                alt="
+                >Profile picture of Malik Ndiaye"
+                class="avatar-image"
+              />
+            </div>
+            <div class="user-info">
+              <span class="user-name">Malik Ndiaye</span>
+              <span class="user-role">Software Engineer</span>
+            </div>
+            <div class="selection-indicator">
+              <i class="fa-solid fa-check" aria-hidden="true"></i>
+            </div>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
